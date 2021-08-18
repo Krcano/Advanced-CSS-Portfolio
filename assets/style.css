@@ -14,23 +14,31 @@ h2 {
     font-size: 46px ;
     padding: 2%;
     color: navy;
-    
-    
 
 }
-main{
 
-    align-content: center;
-}
 header, li{
     display: flex;
     justify-content: space-between;
-  
+    align-items: flex-end;
+    
+     
+}
+
+h1:hover{
+    color: violet;
+
 }
 
 #profileImg {
     border-radius: 100px;
-  
+}
+
+/* doesnt work */
+main{
+
+    align-content: center;
+
 }
 
 
@@ -40,42 +48,41 @@ header, li{
     list-style-type:none;
     font-size: 25px;
     display: inline-flex;
-    margin: 30px 15px ;
+    margin: 30px 30px ;
     
     
 }
 
 nav li a:hover {
-
     color:violet;
     cursor: grab;
-    text-decoration: underline;
-}
-
-
-h1:hover{
-     color: violet;
-
-}
-section {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 80% ;
-    margin: 50px 0px 0px 120px;
     
 }
+
+
+
+/* controls how much of the page the content covers, font and margins */
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60% ;
+    margin: 50px 300px 0px 300px;
+    
+    
+}
+/* padding between h2 and div element below */
 .content-div{
     padding-top: 20px;
-    justify-content: space-between;
+}
+/* doesnt work */
+#contact{
+    display: inline-flex;
 }
 
-.content-div a::after:hover{
-    z-index: .5;
-}
+
+
 
 @media screen and (max-width: 768){
-.navbar{
-  flex-direction: row-reverse;
-}
+
     
 }
 
