@@ -34,13 +34,6 @@ h1:hover{
     border-radius: 100px;
 }
 
-/* doesnt work */
-main{
-
-    align-content: center;
-
-}
-
 
     
 .header nav ul li{
@@ -72,13 +65,21 @@ section {
 /* padding between h2 and div element below */
 .content-div{
     padding-top: 20px;
+    padding-bottom: 100px;
 }
 /* doesnt work */
 #contact{
     display: inline-flex;
 }
 
-
+footer {
+    padding: 35px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: navy;
+    color:violet
+}
 
 
 @media screen and (max-width: 768){
@@ -104,9 +105,3 @@ section {
 
 
 
-footer {
-    padding: 100px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
