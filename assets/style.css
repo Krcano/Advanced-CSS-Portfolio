@@ -19,6 +19,7 @@ h2 {
 
 header, li{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     
@@ -32,6 +33,8 @@ h1:hover{
 
 #profileImg {
     border-radius: 100px;
+    margin: 20px;
+
 }
 
 
@@ -52,13 +55,11 @@ nav li a:hover {
     
 }
 
-
-
 /* controls how much of the page the content covers, font and margins */
 section {
     font-family: Arial, Helvetica, sans-serif;
     width: 60% ;
-    margin: 50px 300px 0px 300px;
+    margin: 50px 300px 0px 150px;
     
     
 }
@@ -67,6 +68,8 @@ section {
     padding-top: 20px;
     padding-bottom: 100px;
 }
+
+
 /* doesnt work */
 #contact{
     display: inline-flex;
@@ -77,14 +80,16 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    background-color: navy;
-    color:violet
+    color: navy;
+   
 }
 
 
-@media screen and (max-width: 768){
-
+@media screen and (max-width: 500){
+    .imgs{
     
+    }
+
 }
 
     
