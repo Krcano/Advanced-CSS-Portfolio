@@ -67,8 +67,8 @@ header, li{
     cursor: grab;
 }
 .content-div img{
-    display:inline-flex;
-    padding-top: 50px;
+    display:flex;
+    padding-top: 25px;
     
 }
 
