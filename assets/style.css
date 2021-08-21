@@ -19,16 +19,20 @@ h2 {
 
 header, li{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     
      
 }
-
-h1:hover{
-    color: violet;
-
+.header nav ul li{
+    
+    list-style-type:none;
+    font-size: 25px;
+    display: inline-flex;
+    margin: 30px 30px ;
+    
+    
 }
 
 #profileImg {
@@ -43,15 +47,6 @@ h1:hover{
     width: 500px;
 }
     
-.header nav ul li{
-    
-    list-style-type:none;
-    font-size: 25px;
-    display: inline-flex;
-    margin: 30px 30px ;
-    
-    
-}
 
 nav li a:hover {
     color:violet;
@@ -76,11 +71,6 @@ section {
 }
 
 
-/* doesnt work */
-#contact{
-    display: inline-flex;
-}
-
 footer {
     padding: 35px;
     margin-bottom: 0px;
@@ -90,12 +80,6 @@ footer {
     color: navy;
    
 }
-
- /* @media screen and (max-width:992px){
-    #horiseon{
-        margin-left: 50px;
-    }
- } */
 
 
 
@@ -110,11 +94,18 @@ footer {
     .navbar ul{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        margin-left: 200px;
        
     }
+    #subheading{
+     margin: 10px 100px 10px 200px;
+    }
     
-    .header{
-        font-size: 35px;
+
+    header h1{
+
+        margin-left: 250px;
     }
     #horiseon{
         width:500px;
@@ -122,29 +113,26 @@ footer {
     }
 
     footer{
-        margin-right: 0px;
-       
-    }
-    footer span {
-        text-align: center;
-    }
-}
-
+        margin-left: 200px;
     
+    }
+   
+    
+}
+@media screen and (max-width: 588px){
+     header h1{
+         margin-left: 250px;
+         font-size: 25px;
+     }
+     .navbar ul{
+         margin-left: 265px;
+     }
+     #profileImg{
+         margin-left: 250px;
+     }
+   #subheading p{
+       
+      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+}
