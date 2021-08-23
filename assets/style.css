@@ -1,3 +1,7 @@
+*{
+
+   /* outline: 5px solid red; */
+}
 
 :root{
 
@@ -6,6 +10,7 @@
 }
 
 body {
+    
 background-color: rgb(239, 235, 241);
 
 }
@@ -13,7 +18,8 @@ background-color: rgb(239, 235, 241);
 h2 {
     font-size: 30px ;
     color: navy;
-
+    padding-bottom: 25px ;
+    
 }
 .header h1{
     font-size: 46px ;
@@ -36,8 +42,7 @@ header, li{
     font-size: 25px;
     display: inline-flex;
     margin: 30px 30px ;
-    
-    
+       
 }
 
 #profileImg {
@@ -47,31 +52,59 @@ header, li{
     border:3px solid var(--fontColor);
 
 }
-
-#workImg{
-    width: 500px;
-    opacity: .6;
+.workImgs{
+    display: flex;
+    flex-wrap: wrap;
 }
-#workImg:hover{
+
+#largeImg{
+    background-image: url("../assets/docs/Myscreenshot.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    /* opacity: .6; */
+    background-size: cover;
+    margin-bottom: 25px;
+    background-position: top center;
+    position: relative;
+}
+/* #largeImg:hover{
     opacity: 1;
     cursor: grab;
+} */
+
+.imgTitle{
+   
+  position: absolute;
+  width: 20%;
+  bottom: 20px;
+  right: 20px;
+  background-color:white;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 20%;
 }
 
-.imgs2{
-     width: 250px;
-     opacity: .6;
+/* img2 adjusts all of the project # pics*/
+
      
+
+ .imgs2{
+     background-image: url("https://images.pexels.com/photos/69432/pexels-photo-69432.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+     width: 49%;
+     height: 300px;
+     background-repeat: no-repeat;
+     background-position:center center;
+     margin-left: 0px;
+     position: relative;
+     margin-bottom: 25px;
+     margin-left: .5%;
  }
- .imgs2:hover {
+ /* .workImgs:hover {
     opacity: 1;
     cursor: grab;
-}
-.content-div img{
-    display:flex;
-    padding-top: 25px;
-    
-}
-
+} */
 
 nav li a:hover {
     color:var(--hover);
@@ -81,16 +114,19 @@ nav li a:hover {
 
 /* controls how much of the page the content covers, font and margins */
 section {
-    width: 60% ;
-    margin: 50px 300px 0px 200px;
+    margin: 0px 30px 0px 30px ;
+    display: flex;
+    flex-direction: column;
+
 
 }
-    
-    
+
 /* padding between h2 and div element below */
 .content-div{
-    padding-top: 20px;
-    padding-bottom: 10px;
+  
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .content-div a:hover{
     color: var(--hover);
@@ -109,57 +145,84 @@ footer {
 
 
 @media screen and (max-width: 768px){
-    
+    h1{
+        flex-wrap: nowrap ;
+    }
     #profileImg{
-        
-        width: 100px;
-        margin-left: 155px;
+        display: flex;
+        width: 150px;
+       ;
        
     }
     .navbar ul{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 175px;
+        
        
     }
-    
 
-    header h1{
-
-        margin-left: 200px;
-    }
-    #workImg{
+    #largImg{
+        display: flex;
         width:500px;
-        margin-right: 50px;
+
+     
     }
     .imgs2{
-        width: 300px;
+        
+        width: 49%;  
+        flex: 50%;
     }
 
+    .imgs3{
+        width: 49%;
+        flex: 50%;
+    }
     footer{
-        margin-left: 200px;
+        display: flex ;
+        justify-content: center;
+        
+       
     
     }
    
     
 }
-@media screen and (max-width: 588px){
+@media screen and (max-width: 636px){
+
+    .header{
+        align-items: center;
+        flex-direction: column;
+    }
      header h1{
-         margin-left: 250px;
-         font-size: 25px;
+         display: flex;
+        
+      
      }
      .navbar ul{
-         margin-left: 265px;
+         display: flex;
+
+         flex-direction: column;
+       
+        
      }
      #profileImg{
-         margin-left: 250px;
+         display: flex;
+         
+        
      }
-     #workImg{
-         width: 350px;
+
+     .imgs{
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+        flex: 50%;
      }
-     .imgs2{
-         width:180px;
+     footer{
+         display: flex;
+         justify-content: center;
+       
      }
 }
 

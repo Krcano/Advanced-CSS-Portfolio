@@ -3,8 +3,7 @@
 
 ## Description
 
-
-
+This project is my personal portfolio. Currently  I am a student and I'm still in the learning process so I have only one link to my work so far however, I have a few features on my portfolio I'd like to highlight. The page has a the ability to scroll to the corresponding spot on the page according to which naviagation link you press. The images under the work subheading will take you to the site where my project is located. Under 'Contact me' the phone number, email and github link should take you directly to how you can contact me. Truth be told, I have put a lot of blood, sweat, and tears in this portfolio page and personally there are some things I would like to change/ fix but really resumes and portfolios will continually be a work in progress throughout my career and will never just be finished.
 
 ## Setup:
 To get started, install it locally by cloning the repo to your computer by copying the ssh key. 
