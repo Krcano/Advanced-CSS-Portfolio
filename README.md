@@ -8,6 +8,7 @@ This project is my personal portfolio. Currently  I am a student and I'm still i
 
 ![screenshot](./assets/docs/portfolio_screenshot.png)
 
+[live site](https://krcano.github.io/Hw02/)
 ## MIT License
 
 Copyright (c) [2021] [Kelly R. Cano]
